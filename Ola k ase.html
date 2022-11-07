@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ola k ase</title>
+  <style>
+    img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+    h1, p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Descubre tu animal interior</h1>
+  <img src="ivan.jpeg" alt="soy un trolazoooo!">
+  <p>Clic en la imagen para saber tu animal interior</p>
+
+
+  <script>
+
+let miImage = document.querySelector('img');
+miImage.onclick = function () {
+    let miSrc = miImage.getAttribute('src');
+    if (miSrc === 'ivan.jpeg') {
+      miImage.setAttribute('src','firefox2.png');
+    } else {
+      miImage.setAttribute('src', 'ivan.jpeg');
+    }
+}
+  </script>
+</body>
+</html>
